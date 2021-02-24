@@ -104,6 +104,18 @@ ls -alh $UNITY_PROJECT_PATH
 
 echo ""
 echo "###########################"
+echo "#    Building library     #"
+echo "###########################"
+echo ""
+
+unity-editor \
+  -nographics \
+  -logfile /dev/stdout \
+  -quit \
+  -projectPath "$UNITY_PROJECT_PATH"
+
+echo ""
+echo "###########################"
 echo "#    Building platform    #"
 echo "###########################"
 echo ""
